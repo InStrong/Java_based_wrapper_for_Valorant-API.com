@@ -1,7 +1,10 @@
 package org.instrong.Utils;
 
+import org.instrong.enums.Locale;
+import org.instrong.models.content.Content;
 import org.instrong.models.leaderboard.Leaderboard;
 import org.instrong.models.leaderboard.LeaderboardFilter;
+import org.instrong.service.ContentService;
 import org.instrong.service.LeaderboardService;
 
 import java.io.IOException;
@@ -44,5 +47,10 @@ public class ValorantApi {
     public Leaderboard getLeaderboard(LeaderboardFilter filter) throws IOException {
         LeaderboardService leaderboardService = LeaderboardService.getInstance();
         return leaderboardService.getLeaderboard(filter);
+    }
+
+    public Content getContent(Locale locale) throws IOException {
+        ContentService contentService = ContentService.getInstance();
+        return contentService.getContent(locale);
     }
 }

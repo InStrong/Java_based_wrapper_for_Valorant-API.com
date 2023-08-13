@@ -1,8 +1,8 @@
 package org.instrong.models;
 
 public class RestResponse {
-    Integer status;
-    Object data;
+    private Integer status;
+    private Object data;
 
     public Integer getStatus() {
         return status;

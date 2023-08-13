@@ -11,14 +11,14 @@ import java.util.List;
 @JsonNaming(PropertyNamingStrategies.SnakeCaseStrategy.class)
 public class Leaderboard {
 
-    long lastUpdate;
-    long nextUpdate;
-    int totalPlayers;
-    int radiantThreshold;
-    int immortal_3_threshold;
-    int immortal_2_threshold;
-    int immortal_1_threshold;
-    List<LeaderboardPlayer> players;
+    private long lastUpdate;
+    private long nextUpdate;
+    private int totalPlayers;
+    private int radiantThreshold;
+    private int immortal_3_threshold;
+    private int immortal_2_threshold;
+    private int immortal_1_threshold;
+    private List<LeaderboardPlayer> players;
 
     public long getLastUpdate() {
         return lastUpdate;

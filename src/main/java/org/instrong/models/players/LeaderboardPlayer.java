@@ -6,21 +6,21 @@ import org.instrong.enums.Rank;
 import java.util.UUID;
 
 public class LeaderboardPlayer {
-    String gameName;
-    String tagLine;
-    UUID puuid;
+    private String gameName;
+    private String tagLine;
+    private UUID puuid;
     @JsonProperty("PlayerCardID")
-    String playerCardId;
+    private String playerCardId;
     @JsonProperty("TitleID")
-    String titleId;
+    private String titleId;
     @JsonProperty("IsBanned")
-    boolean isBanned;
+    private boolean isBanned;
     @JsonProperty("IsAnonymized")
-    boolean isAnonymized;
-    int leaderboardRank;
-    int rankedRating;
-    int numberOfWins;
-    Rank competitiveTier;
+    private boolean isAnonymized;
+    private int leaderboardRank;
+    private int rankedRating;
+    private int numberOfWins;
+    private Rank competitiveTier;
 
     public String getGameName() {
         return gameName;

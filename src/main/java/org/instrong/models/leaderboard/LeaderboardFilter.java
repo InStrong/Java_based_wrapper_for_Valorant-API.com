@@ -15,11 +15,11 @@ import java.util.UUID;
  */
 
 public class LeaderboardFilter {
-    Region region;
-    UUID puuid;
-    String username;
-    String tag;
-    Season season;
+    private Region region;
+    private UUID puuid;
+    private String username;
+    private String tag;
+    private Season season;
 
     public Region getRegion() {
         return region;
